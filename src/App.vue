@@ -18,6 +18,10 @@ export default {
 	</div>
 </template>
 
+<style lang="scss">
+@use './styles/general.scss';
+</style>
+
 <style scoped>
 .container {
 	width: 1000px;
