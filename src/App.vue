@@ -1,14 +1,18 @@
 <script>
 import PageHeader from './components/PageHeader.vue';
 import PageJumbo from './components/PageJumbo.vue';
-import PageMovie from './components/PageMovie.vue';
+import PageNewMovie from './components/PageNewMovie.vue';
+import PageMoviePlaylist from './components/PageMoviePlaylist.vue';
+import PageCountdown from './components/PageCountdown.vue';
 import PageFooter from './components/PageFooter.vue';
 
 export default {
 	components: {
 		PageHeader,
 		PageJumbo,
-		PageMovie,
+		PageNewMovie,
+		PageMoviePlaylist,
+		PageCountdown,
 		PageFooter
 	}
 }
@@ -20,8 +24,12 @@ export default {
 	</div>
 	<PageJumbo />
 	<div class="container">
-		<PageMovie />
+		<PageNewMovie />
 	</div>
+	<div class="container">
+		<PageMoviePlaylist />
+	</div>
+	<PageCountdown />
 </template>
 
 <style lang="scss">

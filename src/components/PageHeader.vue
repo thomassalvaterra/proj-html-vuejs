@@ -23,7 +23,7 @@ export default {
   </header>
   <hr>
   <section>
-    <img src="../assets/img/cropped-logo.png" alt="Logo">
+    <img src="../assets/cropped-logo.png" alt="Logo">
     <div class="input-group mb-3 w-50">
       <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
         aria-expanded="false">All Movie</button>

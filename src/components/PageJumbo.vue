@@ -33,12 +33,12 @@ export default {
             disableOnInteraction: false,
         }" :pagination="{
     clickable: true,
-}" :navigation="true" :modules="modules" class="mySwiper position-relative">
-            <swiper-slide><img src="../assets/img/slider.jpg" alt=""></swiper-slide>
-            <swiper-slide><img src="../assets/img/slider-2.jpg" alt=""></swiper-slide>
+}" :navigation="true" :modules="modules" class="mySwiper position-relative z-n1">
+            <swiper-slide><img src="../assets/slider.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="../assets/slider-2.jpg" alt=""></swiper-slide>
         </swiper>
         <div class="d-flex justify-content-center">
-            <div class="w-25 text-center position-absolute bottom-50 left-50">
+            <div class="w-25 text-center position-absolute top-50 left-50 z-0">
                 <h6><b>Welcome To Our Movie Site</b></h6>
                 <h1>OUR SPECIAL <span class="cl-green">MOVIES</span></h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime repudiandae perspiciatis, dolores, nisi
@@ -49,6 +49,7 @@ export default {
                 <button type="button" class="btn btn-outline-success">Read More</button>
             </div>
         </div>
+
     </div>
 </template>
 
