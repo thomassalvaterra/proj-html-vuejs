@@ -1,12 +1,14 @@
 <script>
 import PageHeader from './components/PageHeader.vue';
-import PageMain from './components/PageMain.vue';
+import PageJumbo from './components/PageJumbo.vue';
+import PageMovie from './components/PageMovie.vue';
 import PageFooter from './components/PageFooter.vue';
 
 export default {
 	components: {
 		PageHeader,
-		PageMain,
+		PageJumbo,
+		PageMovie,
 		PageFooter
 	}
 }
@@ -15,6 +17,10 @@ export default {
 <template>
 	<div class="container">
 		<PageHeader />
+	</div>
+	<PageJumbo />
+	<div class="container">
+		<PageMovie />
 	</div>
 </template>
 
