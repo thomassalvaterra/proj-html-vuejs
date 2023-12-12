@@ -5,15 +5,14 @@ export default {
 </script>
 
 <template>
-    <div class="position-relative z-n1">
+    <div class="position-relative">
         <img src="../assets/coming-bg.jpg">
     </div>
     <div class="d-flex justify-content-center ">
-        <div class="w-25 text-center position-absolute top-50 left-50 z-0">
+        <div class="w-25 text-center">
             <h6 class="cl-green"><b>COMING SOON MOVIE</b></h6>
             <h1 id="fs-50">MAX STILL</h1>
             <h3>JON PLAYER <span class="cl-green">&</span> EMILY ROSE</h3>
-
         </div>
     </div>
 </template>
