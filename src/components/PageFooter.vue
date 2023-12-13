@@ -10,11 +10,13 @@ export default {
 
 <template>
     <div class="row">
-        <div class="col-3">
-            <p>{{ links[0].type }}</p>
+        <div v-for="link in this.footerLinks" class="col-3">
+            <h5>{{ links.title[0].type }}</h5>
+            <p>{{ links.link[0].type }}</p>
         </div>
         <div class="col-3">
-            {{ links[1].type }}
+            <!-- <h5>{{ links.title[1].type }}</h5>
+            <p>{{ links.link[1].type }}</p> -->
         </div>
         <div class="col-3">
 

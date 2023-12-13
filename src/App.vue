@@ -29,9 +29,6 @@ export default {
 						{
 							type: "Movie Category"
 						},
-						{
-							type: "Information"
-						}
 					],
 					link: [
 						{
@@ -56,7 +53,11 @@ export default {
 
 				},
 				{
-					title: "Information",
+					title: [
+						{
+							type: "Information",
+						}
+					],
 					link: [
 						{
 							type: "Youtube Video Post"
