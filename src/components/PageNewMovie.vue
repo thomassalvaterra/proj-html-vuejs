@@ -17,6 +17,7 @@ export default {
                     category: "Coming Soon",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "505 Views",
                     src: this.getImagePath("2-1 (1).jpg")
                 },
                 {
@@ -24,6 +25,7 @@ export default {
                     category: "Latest Movie",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "288 Views",
                     src: this.getImagePath("4-1.jpg")
                 },
                 {
@@ -31,6 +33,7 @@ export default {
                     category: "Top Rating",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "312 Views",
                     src: this.getImagePath("6.jpg")
                 },
                 {
@@ -38,6 +41,7 @@ export default {
                     category: "TV Series",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "362 Views",
                     src: this.getImagePath("5 (1).jpg")
                 },
                 {
@@ -45,6 +49,7 @@ export default {
                     category: "Coming Soon",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "389 Views",
                     src: this.getImagePath("1-2.jpg")
                 },
                 {
@@ -52,6 +57,7 @@ export default {
                     category: "Latest Movie",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "523 Views",
                     src: this.getImagePath("2.jpg")
                 },
                 {
@@ -59,6 +65,7 @@ export default {
                     category: "Top Rating",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "372 Views",
                     src: this.getImagePath("3 (1).jpg")
                 },
                 {
@@ -66,6 +73,7 @@ export default {
                     category: "TV Series",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "356 Views",
                     src: this.getImagePath("4.jpg")
                 },
                 {
@@ -73,6 +81,7 @@ export default {
                     category: "Coming Soon",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "442 Views",
                     src: this.getImagePath("3.jpg")
                 },
                 {
@@ -80,6 +89,7 @@ export default {
                     category: "Latest Movie",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "384 Views",
                     src: this.getImagePath("5 (1).jpg")
                 },
                 {
@@ -87,6 +97,7 @@ export default {
                     category: "Top Rating",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "476 Views",
                     src: this.getImagePath("1.jpg")
                 },
                 {
@@ -94,6 +105,7 @@ export default {
                     category: "Coming Soon",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "1069 Views",
                     src: this.getImagePath("2.jpg")
                 },
                 {
@@ -101,6 +113,7 @@ export default {
                     category: "Latest Movie",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "774 Views",
                     src: this.getImagePath("5.jpg")
                 },
                 {
@@ -108,6 +121,7 @@ export default {
                     category: "Top Rating",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "388 Views",
                     src: this.getImagePath("3.jpg")
                 },
                 {
@@ -115,6 +129,7 @@ export default {
                     category: "TV Series",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "313 Views",
                     src: this.getImagePath("3-1.jpg")
                 },
 
@@ -136,20 +151,21 @@ export default {
             <p class="ms-4">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
         </div>
 
-        <swiper :watchSlidesProgress="true" :slidesPerView="3" class="mySwiper">
-            <swiper-slide v-for="carte in cardInfo ">
-                <img :src="carte.src" class="rounded-4 mt-20 position-relative">
+        <swiper :watchSlidesProgress="true" :spaceBetween="8" :slidesPerView="3" class="mySwiper ">
+            <swiper-slide v-for="carte in cardInfo">
+                <div class="bg-opacity">
+                    <img :src="carte.src" class="rounded-4 mt-20 position-relative">
+                </div>
                 <div class="d-flex justify-content-center">
                     <div class="position-absolute top-50 left-50 h-50">
-                        <h4><b>{{ carte.title }}</b></h4>
-                        <div><strong>Category: {{ carte.category }}</strong></div>
-                        <div class="fs-12">Release: {{ carte.release }}</div>
-                        <p class="fs-12">Genres: {{ carte.genres }}</p>
+                        <h4 class="text-center"><b>{{ carte.title }}</b></h4>
+                        <div class="text-center"><strong>Category: {{ carte.category }}</strong></div>
+                        <div class="fs-12 text-center">Release: {{ carte.release }}</div>
+                        <p class="fs-12 text-center">Genres: {{ carte.genres }}</p>
                         <div class="d-flex justify-content-between mt-45">
                             <div class="bg-col">Details</div>
-                            <div class="bg-col">288 Views</div>
+                            <div class="bg-col">{{ carte.views }}</div>
                         </div>
-
                     </div>
                 </div>
 
@@ -162,6 +178,13 @@ export default {
 img {
     width: 100%;
     height: 400px;
+}
+
+.bg-opacity {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    opacity: 0.2;
 }
 
 img :hover {

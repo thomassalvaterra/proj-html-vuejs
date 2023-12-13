@@ -11,11 +11,11 @@ export default {
       <span><i class="fa-regular fa-envelope"></i>Superhit Top Movie<i class="fa-solid fa-star fs colgroup"></i><i
           class="fa-solid fa-star fs colgroup"></i><span class="colgroup">King Star</span><i
           class="fa-solid fa-star fs colgroup"></i><i class="fa-solid fa-star fs colgroup"></i></span>
-      <span class="ml"><a href="#"><i class="fa-brands fa-facebook m-star lock"></i></a><a href="#"><i
-            class="fa-brands fa-twitter m-star lock"></i></a><a href="#"><i
-            class="fa-brands fa-linkedin m-star lock"></i></a><a href="#"><i
-            class="fa-brands fa-instagram m-star lock"></i></a><a href="#"><i
-            class="fa-brands fa-google-plus-g m-star lock"></i></a></span>
+      <span class="ml"><a href="#"><i class="fa-brands fa-facebook m-star lock fb"></i></a><a href="#"><i
+            class="fa-brands fa-twitter m-star lock tw"></i></a><a href="#"><i
+            class="fa-brands fa-linkedin m-star lock lk"></i></a><a href="#"><i
+            class="fa-brands fa-instagram m-star lock ig"></i></a><a href="#"><i
+            class="fa-brands fa-google-plus-g m-star lock gp"></i></a></span>
     </div>
     <div>
       <a href="#" class="lock"><i class="fa-solid fa-lock m-star"></i>Login</a>
@@ -184,7 +184,39 @@ section {
   text-decoration: none;
 }
 
-a :hover {
+a:hover {
+  color: rgb(19, 190, 19);
+}
+
+.fb {
+  color: blue;
+}
+
+.tw {
+  color: lightskyblue;
+}
+
+.lk {
+  color: aqua;
+}
+
+.ig {
+  color: red;
+}
+
+.gp {
+  color: orangered;
+}
+
+.fb:hover,
+.tw:hover,
+.lk:hover,
+.ig:hover,
+.gp:hover {
+  color: rgb(19, 190, 19);
+}
+
+button:hover {
   color: rgb(19, 190, 19);
 }
 </style>

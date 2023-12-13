@@ -10,6 +10,7 @@ export default {
                     category: "Coming Soon",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "505 Views",
                     src: this.getImagePath("2-1 (1).jpg")
                 },
                 {
@@ -17,6 +18,7 @@ export default {
                     category: "Latest Movie",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "288 Views",
                     src: this.getImagePath("4-1.jpg")
                 },
                 {
@@ -24,6 +26,7 @@ export default {
                     category: "Top Rating",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "312 Views",
                     src: this.getImagePath("6.jpg")
                 },
                 {
@@ -31,6 +34,7 @@ export default {
                     category: "TV Series",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "362 Views",
                     src: this.getImagePath("5 (1).jpg")
                 },
                 {
@@ -38,6 +42,7 @@ export default {
                     category: "Coming Soon",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "389 Views",
                     src: this.getImagePath("1-2.jpg")
                 },
                 {
@@ -45,6 +50,7 @@ export default {
                     category: "Latest Movie",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "523 Views",
                     src: this.getImagePath("2.jpg")
                 },
                 {
@@ -52,6 +58,7 @@ export default {
                     category: "Top Rating",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "372 Views",
                     src: this.getImagePath("3 (1).jpg")
                 },
                 {
@@ -59,6 +66,7 @@ export default {
                     category: "TV Series",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "356 Views",
                     src: this.getImagePath("4.jpg")
                 },
                 {
@@ -66,6 +74,7 @@ export default {
                     category: "Coming Soon",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "442 Views",
                     src: this.getImagePath("3.jpg")
                 },
                 {
@@ -73,6 +82,7 @@ export default {
                     category: "Latest Movie",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "384 Views",
                     src: this.getImagePath("5 (1).jpg")
                 },
                 {
@@ -80,6 +90,7 @@ export default {
                     category: "Top Rating",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "476 Views",
                     src: this.getImagePath("1.jpg")
                 },
                 {
@@ -87,6 +98,7 @@ export default {
                     category: "Coming Soon",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "1069 Views",
                     src: this.getImagePath("2.jpg")
                 },
                 {
@@ -94,6 +106,7 @@ export default {
                     category: "Latest Movie",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "774 Views",
                     src: this.getImagePath("5.jpg")
                 },
                 {
@@ -101,6 +114,7 @@ export default {
                     category: "Top Rating",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "388 Views",
                     src: this.getImagePath("3.jpg")
                 },
                 {
@@ -108,6 +122,7 @@ export default {
                     category: "TV Series",
                     release: "February 12, 2016",
                     genres: "Drama, Action Releas",
+                    views: "313 Views",
                     src: this.getImagePath("3-1.jpg")
                 },
 
@@ -142,7 +157,7 @@ export default {
                     <div class="col-4"><img :src="carte.src"></div>
                     <div class="col-8">
                         <h6><b>{{ carte.title }}</b></h6>
-                        <div class="fs-12"><b>288 Views</b></div>
+                        <div class="fs-12"><b>{{ carte.views }}</b></div>
                         <div class="d-flex justify-content-between">
                             <span class="fs-12">{{ carte.release }}</span>
                             <span class="fs-12">2.30.00</span>
