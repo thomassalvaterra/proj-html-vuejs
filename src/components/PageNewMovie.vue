@@ -163,8 +163,8 @@ export default {
                         <div class="fs-12 text-center">Release: {{ carte.release }}</div>
                         <p class="fs-12 text-center">Genres: {{ carte.genres }}</p>
                         <div class="d-flex justify-content-between mt-45">
-                            <div class="bg-col">Details</div>
-                            <div class="bg-col">{{ carte.views }}</div>
+                            <div class="bg-col"><a href="#">Details</a></div>
+                            <div class="bg-col"><a href="#">{{ carte.views }}</a></div>
                         </div>
                     </div>
                 </div>
@@ -215,5 +215,10 @@ img :hover {
 
 .margin {
     margin: 100px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 </style>

@@ -21,68 +21,68 @@ export default {
 		PageInput,
 		PageFooter
 	},
-	data() {
-		return {
-			footerLinks: [
-				{
-					title: [
-						{
-							type: "Movie Category"
-						},
-					],
-					link: [
-						{
-							type: "English New Movie"
-						},
-						{
-							type: "Hindi All Movie"
-						},
-						{
-							type: "Latest Tamil Movie"
-						},
-						{
-							type: "New Top Rating Movie"
-						},
-						{
-							type: "Hornn New Movie"
-						},
-						{
-							type: "Animation New Movie"
-						}
-					]
+	// data() {
+	// 	return {
+	// 		footerLinks: [
+	// 			{
+	// 				title: [
+	// 					{
+	// 						type: "Movie Category"
+	// 					},
+	// 				],
+	// 				link: [
+	// 					{
+	// 						type: "English New Movie"
+	// 					},
+	// 					{
+	// 						type: "Hindi All Movie"
+	// 					},
+	// 					{
+	// 						type: "Latest Tamil Movie"
+	// 					},
+	// 					{
+	// 						type: "New Top Rating Movie"
+	// 					},
+	// 					{
+	// 						type: "Hornn New Movie"
+	// 					},
+	// 					{
+	// 						type: "Animation New Movie"
+	// 					}
+	// 				]
 
-				},
-				{
-					title: [
-						{
-							type: "Information",
-						}
-					],
-					link: [
-						{
-							type: "Youtube Video Post"
-						},
-						{
-							type: "Actor Information"
-						},
-						{
-							type: "New Promotion"
-						},
-						{
-							type: "Latest Movie In English"
-						},
-						{
-							type: "Latest Flim Product"
-						},
-						{
-							type: "Video New Video"
-						}
-					]
+	// 			},
+	// 			{
+	// 				title: [
+	// 					{
+	// 						type: "Information",
+	// 					}
+	// 				],
+	// 				link: [
+	// 					{
+	// 						type: "Youtube Video Post"
+	// 					},
+	// 					{
+	// 						type: "Actor Information"
+	// 					},
+	// 					{
+	// 						type: "New Promotion"
+	// 					},
+	// 					{
+	// 						type: "Latest Movie In English"
+	// 					},
+	// 					{
+	// 						type: "Latest Flim Product"
+	// 					},
+	// 					{
+	// 						type: "Video New Video"
+	// 					}
+	// 				]
 
-				},
-			]
-		}
-	}
+	// 			},
+	// 		]
+	// 	}
+	// }
 }
 </script>
 
@@ -108,8 +108,8 @@ export default {
 		<PageInput />
 	</div>
 	<div class="bg-img2">
-		<div class="container">
-			<div class="row">
+		<div class="container d-flex">
+			<!-- <div class="row">
 				<div class="col-3">
 					<h6><b>About Us</b></h6>
 					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laboriosam error magni amet,
@@ -127,8 +127,22 @@ export default {
 				<div class="col-3">
 					<PageFooter v-for="link in footerLinks" :links="link" />
 				</div>
+			</div> -->
+			<PageFooter />
+		</div>
+	</div>
+	<div class="container">
+		<div class="d-flex justify-content-between">
+			<div>
+				<span class="fs-12 mr-10"><a href="#">Term And Conditions</a></span>
+				<span class="fs-12 mr-10"><a href="#">Policy</a></span>
+				<span class="fs-12 mr-10"><a href="#">About</a></span>
+			</div>
+			<div>
+				<span class="fs-12">2020 <span><a href="#">@Themepul</a></span> All Rights Reserved.</span>
 			</div>
 		</div>
+
 	</div>
 </template>
 
@@ -147,5 +161,22 @@ export default {
 	width: 100%;
 	height: 450px;
 	object-fit: cover;
+}
+
+.fs-12 {
+	font-size: 12px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(19, 190, 19);
+}
+
+.mr-10 {
+	margin-right: 10px;
 }
 </style>

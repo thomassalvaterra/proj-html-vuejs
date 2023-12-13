@@ -103,8 +103,8 @@ export default {
                             <p class="fs-12">Genres: {{ carte.genres }}</p>
                         </div>
                         <div class="d-flex justify-content-between mt-45">
-                            <div class="bg-col">Details</div>
-                            <div class="bg-col">288 Views</div>
+                            <div class="bg-col"><a href="#">Details</a></div>
+                            <div class="bg-col"><a href="#">288 Views</a></div>
                         </div>
                     </div>
                 </div>
@@ -150,6 +150,10 @@ img {
     border-radius: 10px;
 }
 
+.bg-col:hover {
+    background-color: rgb(19, 190, 19);
+}
+
 .mt-20 {
     margin-top: 20px;
 }
@@ -168,5 +172,10 @@ img {
 
 .margin {
     margin: 100px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 </style>
