@@ -57,7 +57,7 @@ export default {
 				},
 				{
 					title: "Information",
-					[
+					link: [
 						{
 							type: "Youtube Video Post"
 						},
@@ -117,6 +117,11 @@ export default {
 						pariatur
 						sapiente est dolore?
 					</p>
+					<span class="ml"><a href="#"><i class="fa-brands fa-facebook m-star lock fb"></i></a><a href="#"><i
+								class="fa-brands fa-twitter m-star lock tw"></i></a><a href="#"><i
+								class="fa-brands fa-linkedin m-star lock lk"></i></a><a href="#"><i
+								class="fa-brands fa-instagram m-star lock ig"></i></a><a href="#"><i
+								class="fa-brands fa-google-plus-g m-star lock gp"></i></a></span>
 				</div>
 				<div class="col-3">
 					<PageFooter v-for="link in footerLinks" :links="link" />
