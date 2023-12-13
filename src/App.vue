@@ -25,7 +25,14 @@ export default {
 		return {
 			footerLinks: [
 				{
-					title: "Movie Category",
+					title: [
+						{
+							type: "Movie Category"
+						},
+						{
+							type: "Information"
+						}
+					],
 					link: [
 						{
 							type: "English New Movie"
@@ -46,10 +53,31 @@ export default {
 							type: "Animation New Movie"
 						}
 					]
+
 				},
 				{
 					title: "Information",
-					link: ["English New Movie", "Hindi All Movie", "Latest Tamil Movie", "New Top Rating Movie", "Hornn New Movie", "Animation New Movie"]
+					[
+						{
+							type: "Youtube Video Post"
+						},
+						{
+							type: "Actor Information"
+						},
+						{
+							type: "New Promotion"
+						},
+						{
+							type: "Latest Movie In English"
+						},
+						{
+							type: "Latest Flim Product"
+						},
+						{
+							type: "Video New Video"
+						}
+					]
+
 				},
 			]
 		}
@@ -113,7 +141,5 @@ export default {
 	width: 100%;
 	height: 450px;
 	object-fit: cover;
-	background-color: blue;
-	opacity: 0.2;
 }
 </style>

@@ -11,11 +11,10 @@ export default {
 <template>
     <div class="row">
         <div class="col-3">
-            <p>{{ links.title }}</p>
-            <p>{{ links.link.type }}</p>
+            <p>{{ links[0].type }}</p>
         </div>
         <div class="col-3">
-            {{ links.title }}
+            {{ links[1].type }}
         </div>
         <div class="col-3">
 

@@ -119,6 +119,10 @@ export default {
     border-radius: 10px;
 }
 
+.bg-col:hover {
+    background-color: rgb(19, 190, 19);
+}
+
 .ml-10 {
     margin-left: 10px;
 }

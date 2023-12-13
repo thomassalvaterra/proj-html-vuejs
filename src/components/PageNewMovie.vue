@@ -197,12 +197,16 @@ img :hover {
     border-radius: 10px;
 }
 
+.bg-col:hover {
+    background-color: rgb(19, 190, 19);
+}
+
 .mt-20 {
     margin-top: 20px;
 }
 
 .mt-45 {
-    margin-top: 45px;
+    margin-top: 35px;
 }
 
 .fs-12 {
