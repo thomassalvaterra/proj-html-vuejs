@@ -1,41 +1,8 @@
-<!-- <script>
-export default {
-    name: "PageFooter",
-
-    // props: {
-    //     links: Object
-    // }
-}
-</script>
-
-<template>
-     <div class="row">
-        <div v-for="link in this.footerLinks" class="col-3">
-            <h5>{{ links.title[0].type }}</h5>
-            <p>{{ links.link[0].type }}</p>
-        </div>
-        <div class="col-3">
-            <h5>{{ links.title[1].type }}</h5>
-            <p>{{ links.link[1].type }}</p> -->
-        <!-- </div>
-        <div class="col-3">
-
-        </div>
-    </div> -->
-
-<!-- </template>
-
-<style scoped>
-img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-}
-</style> -->
-
 <script>
 export default {
     name: "PageFooter",
+
+    //Use data for card
     data() {
         return {
             footerLinks: [
@@ -76,35 +43,37 @@ export default {
 }
 </script>
 <template>
-    <div class="row mt-50">
-        <div class="col-3">
-            <h6><b>About Us</b></h6>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laboriosam error magni amet,
-                sed
-                doloremque fugit vero repellendus nulla corporis ipsum neque. Dolorem corporis necessitatibus cum
-                pariatur
-                sapiente est dolore?
-            </p>
-            <span class="ml"><a href="#"><i class="fa-brands fa-facebook lock fb mr-10"></i></a><a href="#"><i
-                        class="fa-brands fa-twitter mr-10 lock tw"></i></a><a href="#"><i
-                        class="fa-brands fa-linkedin mr-10 lock lk"></i></a><a href="#"><i
-                        class="fa-brands fa-instagram mr-10 lock ig"></i></a><a href="#"><i
-                        class="fa-brands fa-google-plus-g mr-10 lock gp"></i></a>
-            </span>
-        </div>
-        <div class="col-6 d-flex justify-content-between">
-            <div v-for="link in footerLinks">
-                <h6><b>{{ link.title }}</b></h6>
-                <div v-for="element in link.link"><a href="#">{{ element }}</a></div>
+    <div class="bg-img2 d-flex align-items-center">
+        <div class="row mt-50 section">
+            <div class="col-3">
+                <h6><b>About Us</b></h6>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laboriosam error magni amet,
+                    sed
+                    doloremque fugit vero repellendus nulla corporis ipsum neque. Dolorem corporis necessitatibus cum
+                    pariatur
+                    sapiente est dolore?
+                </p>
+                <span class="ml"><a href="#"><i class="fa-brands fa-facebook lock fb mr-10"></i></a><a href="#"><i
+                            class="fa-brands fa-twitter mr-10 lock tw"></i></a><a href="#"><i
+                            class="fa-brands fa-linkedin mr-10 lock lk"></i></a><a href="#"><i
+                            class="fa-brands fa-instagram mr-10 lock ig"></i></a><a href="#"><i
+                            class="fa-brands fa-google-plus-g mr-10 lock gp"></i></a>
+                </span>
             </div>
-        </div>
-        <div class="col-3">
-            <h6><b>Recent Posts</b></h6>
-            <div v-for="carte in cardInfo" class="row my-10">
-                <div class="col-4"><img :src="carte.src"></div>
-                <div class="col-8">
-                    <div class="fs-12"><b><a href="#">{{ carte.title }}</a></b></div>
-                    <div class="fs-12">{{ carte.release }}</div>
+            <div class="col-6 d-flex justify-content-between">
+                <div v-for="link in footerLinks">
+                    <h6><b>{{ link.title }}</b></h6>
+                    <div v-for="element in link.link"><a href="#">{{ element }}</a></div>
+                </div>
+            </div>
+            <div class="col-3">
+                <h6><b>Recent Posts</b></h6>
+                <div v-for="carte in cardInfo" class="row my-10">
+                    <div class="col-4"><img :src="carte.src"></div>
+                    <div class="col-8">
+                        <div class="fs-12"><b><a href="#">{{ carte.title }}</a></b></div>
+                        <div class="fs-12">{{ carte.release }}</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -163,5 +132,17 @@ a:hover {
 
 .fs-12 {
     font-size: 12px;
+}
+
+.bg-img2 {
+    background-image: url(../assets/ft-bg.jpg);
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.section {
+    width: 1000px;
+    margin: 0 auto;
 }
 </style>

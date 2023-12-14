@@ -4,6 +4,7 @@ import { faSpoon } from '@fortawesome/free-solid-svg-icons';
 export default {
     name: "PageOtherCards",
 
+    //Use data for card
     data() {
         return {
             cardInfo: [

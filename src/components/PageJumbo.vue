@@ -27,6 +27,7 @@ export default {
 </script>
 
 <template>
+    <!-- Use swiper to do carousel -->
     <div class="jumbotron">
         <swiper :autoplay="{
             delay: 7000,

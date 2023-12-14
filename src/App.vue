@@ -21,68 +21,6 @@ export default {
 		PageInput,
 		PageFooter
 	},
-	// data() {
-	// 	return {
-	// 		footerLinks: [
-	// 			{
-	// 				title: [
-	// 					{
-	// 						type: "Movie Category"
-	// 					},
-	// 				],
-	// 				link: [
-	// 					{
-	// 						type: "English New Movie"
-	// 					},
-	// 					{
-	// 						type: "Hindi All Movie"
-	// 					},
-	// 					{
-	// 						type: "Latest Tamil Movie"
-	// 					},
-	// 					{
-	// 						type: "New Top Rating Movie"
-	// 					},
-	// 					{
-	// 						type: "Hornn New Movie"
-	// 					},
-	// 					{
-	// 						type: "Animation New Movie"
-	// 					}
-	// 				]
-
-	// 			},
-	// 			{
-	// 				title: [
-	// 					{
-	// 						type: "Information",
-	// 					}
-	// 				],
-	// 				link: [
-	// 					{
-	// 						type: "Youtube Video Post"
-	// 					},
-	// 					{
-	// 						type: "Actor Information"
-	// 					},
-	// 					{
-	// 						type: "New Promotion"
-	// 					},
-	// 					{
-	// 						type: "Latest Movie In English"
-	// 					},
-	// 					{
-	// 						type: "Latest Flim Product"
-	// 					},
-	// 					{
-	// 						type: "Video New Video"
-	// 					}
-	// 				]
-
-	// 			},
-	// 		]
-	// 	}
-	// }
 }
 </script>
 
@@ -107,29 +45,8 @@ export default {
 	<div class="container">
 		<PageInput />
 	</div>
-	<div class="bg-img2">
-		<div class="container d-flex">
-			<!-- <div class="row">
-				<div class="col-3">
-					<h6><b>About Us</b></h6>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laboriosam error magni amet,
-						sed
-						doloremque fugit vero repellendus nulla corporis ipsum neque. Dolorem corporis necessitatibus cum
-						pariatur
-						sapiente est dolore?
-					</p>
-					<span class="ml"><a href="#"><i class="fa-brands fa-facebook m-star lock fb"></i></a><a href="#"><i
-								class="fa-brands fa-twitter m-star lock tw"></i></a><a href="#"><i
-								class="fa-brands fa-linkedin m-star lock lk"></i></a><a href="#"><i
-								class="fa-brands fa-instagram m-star lock ig"></i></a><a href="#"><i
-								class="fa-brands fa-google-plus-g m-star lock gp"></i></a></span>
-				</div>
-				<div class="col-3">
-					<PageFooter v-for="link in footerLinks" :links="link" />
-				</div>
-			</div> -->
-			<PageFooter />
-		</div>
+	<div class="d-flex">
+		<PageFooter />
 	</div>
 	<div class="container">
 		<div class="d-flex justify-content-between">
@@ -154,13 +71,6 @@ export default {
 .container {
 	width: 1000px;
 	margin: 0 auto;
-}
-
-.bg-img2 {
-	background-image: url(./assets/ft-bg.jpg);
-	width: 100%;
-	height: 450px;
-	object-fit: cover;
 }
 
 .fs-12 {

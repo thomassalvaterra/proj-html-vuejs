@@ -9,6 +9,7 @@ export default {
         Swiper,
         SwiperSlide,
     },
+    // Use data for card
     data() {
         return {
             cardInfo: [
@@ -151,6 +152,7 @@ export default {
             <p class="ms-4">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
         </div>
 
+        <!-- Use swiper to do a carousel -->
         <swiper :watchSlidesProgress="true" :spaceBetween="8" :slidesPerView="3" class="mySwiper ">
             <swiper-slide v-for="carte in cardInfo">
                 <div class="bg-opacity">

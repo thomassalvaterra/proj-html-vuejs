@@ -4,6 +4,7 @@ export default {
 }
 </script>
 <template>
+    <!-- Make inputs to subscripe a user -->
     <section class="margin">
         <div class="position-relative">
             <img class="img-input" src="../assets/form-bg-1.png" alt="">

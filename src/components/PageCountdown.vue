@@ -2,10 +2,11 @@
 export default {
     name: "PageCountdown",
 
+    //Make a countdown
     data() {
         return {
             countdown: '',
-            countDownDate: new Date("dec 25, 2023 15:37:25").getTime(),
+            countDownDate: new Date("dec 25, 2023 15:37:25").getTime(), //Impost the last date
         };
     },
     mounted() {
@@ -40,7 +41,7 @@ export default {
             <h6 class="cl-green"><b>COMING SOON MOVIE</b></h6>
             <h1 id="fs-50">MAX STILL</h1>
             <h3>JON PLAYER <span class="cl-green">&</span> EMILY ROSE</h3>
-            <p>{{ this.countdown }}</p>
+            <p class="green">{{ this.countdown }}</p>
         </div>
     </div>
 </template>
@@ -69,6 +70,10 @@ export default {
 p {
     text-align: center;
     font-size: 1.5rem;
+}
+
+.green {
+    background-color: rgb(19, 190, 19);
 }
 </style>
 

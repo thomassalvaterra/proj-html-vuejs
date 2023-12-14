@@ -1,7 +1,7 @@
 <script>
 export default {
     name: "PageMoviePlaylist",
-
+    // Use data for card
     data() {
         return {
             cardInfo: [
@@ -145,6 +145,7 @@ export default {
         </div>
         <div class="row">
             <div class="col-8">
+                <!-- Use iframe to import Youtube Video -->
                 <iframe class="mt-50" width="600" height="420"
                     src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
                 </iframe>
@@ -153,6 +154,7 @@ export default {
                 <h6 class="my-10"><b>New Movie</b></h6>
                 <p class="fs-12">Plying 24</p>
                 <hr>
+                <!-- Use cycle to import img and text -->
                 <div v-for="carte in cardInfo" class="row my-10">
                     <div class="col-4"><img :src="carte.src"></div>
                     <div class="col-8">

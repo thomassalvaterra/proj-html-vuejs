@@ -2,6 +2,7 @@
 export default {
     name: "PageLatestMovie",
 
+    //Use data for card
     data() {
         return {
             cardInfo: [
